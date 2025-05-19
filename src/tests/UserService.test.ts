@@ -14,6 +14,6 @@ describe("UserService DI Test", () => {
   it("should return expected string from UserService via DI", () => {
     const userService = container.get<IUserService>("UserService");
     const result = userService.getUser();
-    expect(result).toBe("Rayra  from DI!");
+    expect(result).toBe("Rayra  for DI!");
   });
 });
